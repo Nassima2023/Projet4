@@ -1,30 +1,13 @@
-
 * {
-        font-family: 'Raleway', sans-serif;
-}   
-
-html {
-    width: 100%;
-}
-
-.main-contenair { 
-    width: 100%;
-}
-
-body {
+    font-family: 'Raleway', sans-serif;
     margin-left: 0px;
-    margin-right: 0px;
-    
-}
+    margin-right:0px;
+} 
 
-button { 
-    font-size: 16px;
-    padding: 20px;
-}
 
-/* Header */ 
+/* header*/ 
 
-header {
+header { 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -38,110 +21,121 @@ header {
 
 .lieu { 
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    width: 100%;
+    justify-content: center;
     padding: 20px;
     background-color: #EAEAEA;
 
 }
 
-.icone_lieu {
-    height: 30px;
-    background-color: #EAEAEA;
+/* Main contenair*/ 
 
+.titrediv {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #F6F6F6;
+    padding-bottom: 50px;
+    padding-top: 30px;
+    margin-bottom: 50px;
 }
 
-.boutton-explorer { 
+.titrediv__button { 
     background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
     border-radius: 30px;
+    padding: 15px;
     border: 0px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
     color: white;
-    transition: all 450ms;
+    opacity: 1;
+    transition: 0.3s ease; 
+    font-weight: 500;
 }
-.boutton-explorer:hover {
-    transform: scale(1.13);
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.40);
-}
-/* main contenair */
-
-.div1 {
-    background-color: #F6F6F6;
-    DISPLAY: FLEX;
-    FLEX-DIRECTION: column;
-    ALIGN-ITEMS: center;
-    padding: 30px;
+ .titrediv__button:hover {
+    opacity: 0.8;
+    box-shadow: 0px 4px 10px rgba(0.30, 0.30, 0.30, 0.40);
 }
 
-/* Fonctionnement */ 
-.Fonctionnement {
-    margin-top: 70px;
-    margin-left: 20px;
-}
+/* fonctionnement */ 
 
-.boutton {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-}
-
-.boutton-fonctionnement { 
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    align-items: center;
-    border-radius: 20px;
-}
-
-
-/* Restaurants */ 
-
-.restaurants { 
-    background-color: #F6F6F6;
-    padding-top: 40px;
-    margin-top: 70px;
-    padding-left: 20px;
-    padding-bottom: 60px;
-}
-
-.restaurants-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-}
-
-.restaurants .card { 
-    background-color: white;
-    border-radius: 15px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-    width: 90%;
-    color: black;
-    text-decoration: none;
-    height: 330px;
-}
-
-.card img {
-    width: 100%;
-    height: 231PX;
-    border-radius: 15px 15px 0px 0px;
-    object-fit: cover;
-    object-position: center;
-}
-
-.restaurants .card-content { 
+.fonctionnementdiv {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    margin: 0;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 50px;
+}
 
+.fonctionnementdiv__button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    background-color: #F6F6F6;
+    padding: 20px;
+    border-radius: 15px;
+    border: 0px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+    
+
+/* Restaurants */ 
+
+.restaurantsdiv {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    background-color:  #F3F3F3;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 95%;
+    height: 250px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    }
+
+    .card-content { 
+        width: 100%;
+        padding-left: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-sizing: border-box;
+        color: black;
+    }
+
+.card:link {
+    text-decoration: none;
+}
+
+.card img {
+    display: flex;
+    border-radius: 20px 20px 0px 0px;
+    height: 155px;
+    box-sizing: border-box;
+    object-fit: cover;
 }
 
 /* Footer */ 
 
 footer {
+    display: flex;
+    flex-direction: column;
     background-color: #353535;
     color: white;
 }
@@ -150,3 +144,8 @@ ul {
     list-style: none;
 }
 
+.footer__logo {
+    color: white;
+    width: 90px;
+    height: 30px;
+}
