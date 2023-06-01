@@ -4,6 +4,8 @@
     margin-right:0px;
 } 
 
+/* PAGE D'ACCUEIL */ 
+
 .title_fonctionnement , .title_restaurants {
     size: 24px;
     padding-left: 15px;
@@ -200,9 +202,6 @@ header {
     object-fit: cover;
 }
 
-.card-txt {
-    
-}
 
 /* Footer */ 
 
@@ -287,4 +286,72 @@ ul {
     .footer__logo {
         padding: 10px 30px 0px 60px;
     }
+}
+
+/* PAGE RESTAU */ 
+
+.image_restau {
+    box-sizing: border-box;
+    width: 100%;
+    height: 275px;
+    position: relative;
+}
+
+.new_writing {
+    font-family: 'Shrikhand' ;
+    font-size: 28px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 41px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.background_grey {
+    margin-top: 0px;
+    background-color: #F6F6F6;
+    position: absolute;
+    top: 280px;
+    border-radius: 40px 40px 0px 0px ;
+    width: 100%;
+}
+
+.center { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.card_menu h3, .card_menu h4, .card_menu p {
+    margin: 10px; 
+}
+  
+
+.card_menu {
+    background-color: white;
+    height: 69px;
+    box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    width: 90%;
+    padding: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.card_menu p { 
+    position: absolute;
+    bottom: 10px;
+    right: 0px;
+}
+
+.button_margin {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+footer {
+    width: 100%;
+    margin-top: 1200px;
 }
