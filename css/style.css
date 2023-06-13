@@ -192,15 +192,15 @@ header {
   top: 20px;
   right: 20px;
   opacity: 0;
-  transition: all 0.5s;
-}
-
-.heart_full:active {
-  opacity: 1;
+  transition: all 1s;
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
   -webkit-background-clip: text;
           background-clip: text;
   color: transparent;
+}
+
+.heart_full:hover {
+  opacity: 1;
 }
 
 .card:link {
@@ -210,7 +210,7 @@ header {
 .card img {
   display: flex;
   border-radius: 20px 20px 0px 0px;
-  height: 170px;
+  height: 180px;
   box-sizing: border-box;
   -o-object-fit: cover;
      object-fit: cover;
@@ -330,10 +330,26 @@ ul {
   width: 100%;
 }
 
-.background_grey_heart {
+.background_grey_heart_empty {
   position: absolute;
   right: 10px;
   top: 55px;
+}
+
+.background_grey_heart_full {
+  position: absolute;
+  right: 10px;
+  top: 55px;
+  opacity: 0;
+  transition: all 1s;
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+
+.background_grey_heart_full:hover {
+  opacity: 1;
 }
 
 .center {
@@ -345,10 +361,6 @@ ul {
 
 .card_menu h3, .card_menu h4, .card_menu p {
   margin: 10px;
-}
-
-.card_menu p {
-  font-weight: 600;
 }
 
 .card_menu {
@@ -365,20 +377,75 @@ ul {
 .thin_writing {
   font-weight: 200;
   font-size: 19px;
-  width: 80%;
+  width: 70%;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
-h3, p {
-  font-size: 21px;
+h3 {
+  font-size: 20px;
 }
 
-.card_menu p {
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 70%;
+  white-space: nowrap;
+}
+
+.card_menu {
+  position: relative;
+  overflow: hidden;
+}
+
+.modification_width {
+  width: 100%;
+}
+
+.card_menu .modification_width:hover {
+  width: 80%;
+  box-sizing: border-box;
+  margin-right: 0px;
+}
+
+.animation_price {
   position: absolute;
-  bottom: 10px;
+  bottom: 3px;
   right: 0px;
+  font-weight: 600;
+  font-size: 18px;
+  transition: 0.5s ease-in;
+}
+
+.card_menu:hover .animation_price {
+  right: 19%;
+}
+
+.rectangle_animation {
+  position: absolute;
+  height: 89px;
+  background-color: #99E2D0;
+  width: 100px;
+  border-radius: 0px 15px 15px 0px;
+  opacity: 0;
+  right: -80px;
+  top: 0px;
+  transition: 0.5s ease-in;
+}
+
+.card_menu:hover .rectangle_animation {
+  opacity: 1;
+  transform: translateX(-50%);
+}
+
+.fa-circle-check {
+  position: absolute;
+  display: flex;
+  margin-top: 45px;
+  margin-left: 25px;
+  color: white;
+  opacity: 1;
 }
 
 .button_margin {
