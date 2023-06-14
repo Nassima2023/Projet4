@@ -311,6 +311,22 @@ ul {
 }
 
 /* PAGE RESTAU */ 
+.header_restaurant{
+    height: 60px;
+}
+.return_index {
+    position: absolute;
+    width: 100%;
+    padding-left: 20px;
+    box-sizing: border-box;
+    color: black;
+}
+.fa-arrow-left {
+    position: absolute;
+    width: 100%;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
 
 .contenair_restaurant {
     font-family: 'Roboto', sans-serif;
@@ -322,6 +338,7 @@ ul {
     height: 275px;
     z-index: 0;
     position: relative;
+    object-fit: cover;
 }
 
 /* Section menu */ 
@@ -332,8 +349,8 @@ ul {
     font-weight: 800;
     padding: 40px 0px 0px 30px;
     margin: 0;
-
 }
+
 
 .title_underline {
     border-bottom: 3px #99E2D0 solid;
@@ -355,14 +372,21 @@ ul {
     width: 100%;
 }
 
+.title_1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    position: relative;
+    width: 100%;
+}
+
 .background_grey_heart_empty {
-    position: absolute;
-    right: 10px;
+    position: relative;
+    left: 20px;
     top: 55px;
 }
 .background_grey_heart_full {
-    position: absolute;
-    right: 10px;
+    position: relative;
     top: 55px;
     opacity: 0;
     transition: all 1s;
@@ -460,31 +484,6 @@ h3 {
     opacity: 1;
     transform: translateX(-50%);
 }
-// .rectangle_animation {
-//     position: absolute;
-//     height: 89px;
-//     background-color: #99E2D0;
-//     width: 100px;
-//     border-radius: 0px 15px 15px 0px;
-//     opacity: 0;
-//     right: -50px; 
-//     top: 0;
-//     transition: transform 0.5s ease; 
-//   }
-
-// .card_menu:hover .rectangle_animation:hover {
-//     transform: translateX(-20%); 
-//     opacity: 1;
-// }
-// .animation_price {
-//     transition: transform 0.5s ease
-// }
-
-// .animation_price:hover {
-//     position: absolute; 
-//     right: 0px;
-// }
-
 
 .fa-circle-check {
     position: absolute;
@@ -495,12 +494,6 @@ h3 {
     opacity: 1;
 }
 
-// .fa-circle-check:hover {
-//     transform: translateX(-100px); 
-//     opacity: 1;
- 
-// }
-  
 
 .button_margin {
     margin-top: 30px;
@@ -517,3 +510,84 @@ footer {
     width: 100%;
 }
 
+
+@media (min-width: 720px) and (max-width: 1439px) {
+    
+    .title_1{
+        justify-content: center;
+    }
+    .contenair_center{
+        display: flex;
+        width: 80%;
+        margin: auto;
+    }
+
+    .background_grey {
+        margin-top: -45px;
+    }
+    
+    .card_menu {
+        width: 60%;
+    }
+    
+    .title_underline {
+        margin-left: 50px;  
+    }
+    
+    
+    .card_menu:hover .rectangle_animation {
+        opacity: 1;
+        transform: translateX(-50%);
+    }
+    
+        
+    .card_menu:hover .animation_price {
+        right: 17%;
+    }
+}
+
+
+@media (min-width: 1440px) and (max-width: 1600px) {
+
+.title_1{
+    justify-content: center;
+}
+.contenair_center{
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+
+.background_grey {
+    margin-top: -45px;
+}
+
+
+.card_menu {
+    width: 60%;
+}
+
+.title_underline {
+    margin-left: 220px;  
+}
+
+
+
+.card_menu:hover .rectangle_animation {
+    opacity: 1;
+    transform: translateX(-50%);
+}
+
+    
+.card_menu:hover .animation_price {
+    right: 10%;
+}
+// .background_grey {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     width: 80%;
+//     margin-left: 100px;
+//     margin-right: 100px;
+// }
+}
