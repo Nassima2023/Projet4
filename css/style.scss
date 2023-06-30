@@ -297,7 +297,7 @@ ul {
     padding-top: 20px;
 }
 
-@media (min-width: 720px) and (max-width: 1600px) {
+@media (min-width: 720px) and (max-width: 100000px) {
 
     .title_fonctionnement , .title_restaurants {
         padding-left: 80px;
@@ -456,6 +456,8 @@ ul {
     padding: 10px;
     overflow: hidden;
     position: relative;
+    opacity: 0;
+    transform: translateX(-80%);
 }
 
 .thin_writing {
@@ -549,24 +551,49 @@ footer {
 }
 
 
-.entrée , .plats , .desserts {
-    animation: menuAnimation 2s ease-in-out forwards;
-}
+/* Animation en cascade des menus */ 
 
-@keyframes menuAnimation {
-    0% {
-      translate: -20px;
-    }
-    
-    // 50% {
-    //     translate: 20px;
-    // }
-    100% {
-      translate: 0px;
+  
+@keyframes cascadeAnimation {
+0% {
+    opacity: 0;
+    transform: translateX(-80%);
     }
 
-}
+50% {
+    opacity: 0.5;
+    transform: translateY(-20%);
 
+}
+  
+100% {
+    opacity: 1;
+    transform: translateX(0);
+    }
+}
+  
+.card_menu:nth-child(1) {
+    animation: cascadeAnimation 1s ease-in-out forwards;
+    animation-delay: 0.2s;
+}
+  
+.card_menu:nth-child(2) {
+    animation: cascadeAnimation 1s ease-in-out forwards;
+    animation-delay: 0.4s;
+}
+  
+.card_menu:nth-child(3) {
+    animation: cascadeAnimation 1s ease-in-out forwards;
+    animation-delay: 0.6s;
+}
+  
+.card_menu:nth-child(4) {
+    animation: cascadeAnimation 1s ease-in-out forwards;
+    animation-delay: 0.8s;
+}
+  
+  
+  
 
 
 @media (min-width: 720px) and (max-width: 1439px) {
@@ -604,7 +631,7 @@ footer {
 }
 
 
-@media (min-width: 1440px) and (max-width: 1600px) {
+@media (min-width: 1440px) and (max-width: 100000px) {
 
 .title_1{
     justify-content: center;
