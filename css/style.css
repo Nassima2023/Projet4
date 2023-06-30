@@ -286,7 +286,7 @@ ul {
   padding-top: 20px;
 }
 
-@media (min-width: 720px) and (max-width: 100000px) {
+@media (min-width: 720px) {
   .title_fonctionnement, .title_restaurants {
     padding-left: 80px;
   }
@@ -585,7 +585,7 @@ footer {
     right: 70px;
   }
 }
-@media (min-width: 1440px) and (max-width: 100000px) {
+@media (min-width: 1440px) {
   .title_1 {
     justify-content: center;
   }
